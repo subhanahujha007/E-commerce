@@ -1,10 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import "./Footer.scss"
+import { motion } from 'framer-motion'
 import {FiInstagram,FiLinkedin,FiGithub} from "react-icons/fi"
 const Footer = () => {
   return (
-    <div className="footer" style={{backgroundColor:"black",color:"white"}}>
+    <motion.div whileInView={{opacity:1,transition:{duration:0.5}}} initial={{opacity:0}} className="footer" style={{backgroundColor:"black",color:"white"}}>
       <div className="footer-logo">SJ</div>
       <div className="footer-links">
         <Link>Company</Link>
@@ -18,7 +19,7 @@ const Footer = () => {
     <FiLinkedin/>
       </div>
       <div className="footer-cprt">All Rights Reserved </div>
-    </div>
+    </motion.div>
   )
 }
 
