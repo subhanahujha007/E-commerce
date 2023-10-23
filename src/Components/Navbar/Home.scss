@@ -1,0 +1,50 @@
+section{
+    height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(to right, blue , violet);
+display: flex;
+   >.left{
+    color: white;
+    width: 50%;
+    padding-top: 20px;
+    >h2{
+        
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 40px;
+    }
+    
+    >h1{
+        color: black;
+        margin-top: 20px;
+        margin-left: 70px;
+        font-size: 100px;
+        font-weight: 700;
+        >img{
+            margin-left: 30px;
+            height: 70px;
+        }
+    }
+    >button{
+        margin-left: 300px;
+        padding: 1.3rem;
+        border-radius: .5rem;
+        background-color: palevioletred;
+        font-size: 20px;
+        font-weight: 400;
+        &:hover{
+            background-color: rgba(216, 112, 147, 0.747);
+        }
+    }
+   }
+   >.rigth{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    >img{
+        width: 50%;
+        object-fit: cover;
+        object-position: left;
+       
+    }
+   }
+}

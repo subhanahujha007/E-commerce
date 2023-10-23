@@ -1,0 +1,41 @@
+*{
+   padding: 0;
+   margin: 0;
+   ::-webkit-scrollbar{
+    display: none;
+   }
+    .su{
+    height: 90vh;
+
+form{
+    background-color: rgb(238, 201, 207);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 90%;
+    width: 70%;
+    gap: 20px;
+    margin-top: 40px;
+    >input{
+        width: 50%;
+        outline: none;
+        border-radius: 20px;
+        height: 60px;
+    }
+    >button{
+            background-color: palevioletred;
+            padding: 1.3rem;
+            font-size: 30px;
+            border-radius: 30px;
+            >a{
+                width: 100%;
+                height: 100%;
+                text-decoration: none;
+                color: black;
+            }
+            &:hover{
+                background-color: rgba(216, 112, 147, 0.377);
+            }
+    }
+}}}
