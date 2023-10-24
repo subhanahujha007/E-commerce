@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    .nlbg{
+        background-image: linear-gradient(to right,blue,violet);
+        width: 100vw;
+        height: 40vh;
+    .newletter{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        background-image: linear-gradient(to bottom right, palevioletred, paleturquoise );
+        height: 40vh;
+        margin: auto;
+       border-radius: 30px;
+        gap: 40px;
+    >h2{
+        font-size: 3rem;
+    }
+    >p{
+        font-size: 1.3rem;
+    }
+    >.newsletterinput{
+        display: flex;
+        width: 40vw;
+        >input{
+            padding: 5px;
+        width: 30vw;
+        font-size: 1.2rem;
+        border-radius: 20px 0 0 20px;
+        height: 40px;
+        outline: none;
+    }
+>button{
+    height: 53px;
+    
+    color: white;
+    background-color: black;
+    outline: none;
+    width: 5vw;
+border-radius: 0 20px  20px 0;
+}}
+    }}
+}

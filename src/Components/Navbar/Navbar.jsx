@@ -1,13 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import {FiShoppingCart} from "react-icons/fi"
-import { motion } from 'framer-motion'
+import { motion,useMotionValueEvent,useScroll } from 'framer-motion'
 import "./Navbar.scss"
 const Navbar = () => {
+  const [hidden,sethidden]=useState(false);
+  const {scrollY}=useScroll();
+  useMotionValueEvent(scrollY,"change",(latest)=>{
+    const previous=scrollY.getPrevious();
+    if(latest>previous && latest>20){
+      sethidden(true);
+    }
+    else{
+      sethidden(false);
+    }
+  })
   return (
     <motion.div className="Navbar"
-     initial={{y:-100}}
-     animate={{y:0,transition:{duration:0.4,type:"spring",stiffness:80}}}
+        variants={{
+          visible:{y:0},
+          hidden:{y:"-200%"}
+        }}
+        animate={hidden?"hidden":"visible"}
+        transition={{duration:0.35,ease:"easeInOut"}}
      >
         <div className="logo"><h1>Sj</h1></div>
         <div className="link">

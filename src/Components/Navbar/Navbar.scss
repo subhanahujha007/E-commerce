@@ -9,8 +9,10 @@
    box-shadow: 0 1px 2px green ;
     display: flex;
     align-items: center;
-    background-color: rgba(172, 255, 47, 0.384);
-
+    background-color: rgba(153, 245, 15, 0.938);
+    position: sticky;
+    z-index: 23456;
+    top: 0;
 .logo{
     width: 20%;
     height: 100%;

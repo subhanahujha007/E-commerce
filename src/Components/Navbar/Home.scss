@@ -31,6 +31,7 @@ display: flex;
         background-color: palevioletred;
         font-size: 20px;
         font-weight: 400;
+        filter: drop-shadow(10px 9px 3px pink);
         &:hover{
             background-color: rgba(216, 112, 147, 0.747);
         }
@@ -41,6 +42,7 @@ display: flex;
     display: flex;
     justify-content: flex-end;
     >img{
+        filter: drop-shadow(30px 0px 9px #4444dd);
         width: 50%;
         object-fit: cover;
         object-position: left;

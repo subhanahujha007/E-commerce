@@ -1,11 +1,18 @@
-import React from 'react'
+import {React,useRef} from 'react'
 import { Link } from 'react-router-dom'
 import "./Footer.scss"
-import { motion } from 'framer-motion'
+import { motion ,useInView} from 'framer-motion'
 import {FiInstagram,FiLinkedin,FiGithub} from "react-icons/fi"
+import { useEffect } from 'react'
 const Footer = () => {
+const ref=useRef(null);
+const isInview=useInView(ref,{once:true});
+useEffect(() => {
+  console.log(isInview)
+}, [isInview])
+
   return (
-    <motion.div whileInView={{opacity:1,transition:{duration:0.5}}} initial={{opacity:0}} className="footer" style={{backgroundColor:"black",color:"white"}}>
+    <motion.div ref={ref} style={{background:isInview?"black":"pink",transition:"1s background",color:'white'}} className="footer" >
       <div className="footer-logo">SJ</div>
       <div className="footer-links">
         <Link>Company</Link>
