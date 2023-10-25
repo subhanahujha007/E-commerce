@@ -1,0 +1,19 @@
+.menspage{
+    width:100%;
+    min-height:80vh;
+    background-image: linear-gradient(to right,blue,pink);
+    
+    >h1{
+        margin-left: 600px;
+    }
+    >div{color: black;
+
+        font-size: 20px;
+        font-weight: 500;
+        margin:0 auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+}

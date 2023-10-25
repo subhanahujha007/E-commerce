@@ -6,7 +6,7 @@ import Singup from "./Components/Singup.jsx"
 import Footer from "./Components/Footer.jsx"
 import NOpage from "./Components/NOpage.jsx"
 import Newsletter from "./Components/Newsletter"
-import Men from "./Components/men";
+import Men from "./Components/men/men";
 function App() {
   return (<div >
     <BrowserRouter>

@@ -1,12 +1,18 @@
-import React from 'react'
-import data from './mendata'
+import {useRef,React} from 'react'
+import data from "./men/mendata"
 import Item from './item'
-const popular = () => {
+import {motion,useScroll} from "framer-motion"
+const Popular = () => {
+  const ref=useRef(null);
+  const {scrollYProgress}=useScroll({
+    target:"ref",
+    offset:["0 0","0.6 1"]
+  });
   return (
     <div  className='popular'>
-    <h1 style={{marginLeft:500,fontSize:"50px"}}>POPULAR IN MEN</h1>
+    <motion.h1  style={{marginLeft:500,opacity:scrollYProgress}} ref={ref} >POPULAR IN MEN</motion.h1>
     <hr />
-<div className="popular-items" style={{display:"flex",justifyContent:"space-between",padding:" 10px 0px 0px 10px "}}>
+<div className="popular-items"   style={{display:"flex",justifyContent:"space-between",padding:" 10px 0px 0px 10px "}}>
     {
         data.map((item,i)=>{
           return(
@@ -19,4 +25,4 @@ const popular = () => {
   )
 }
 
-export default popular
+export default Popular

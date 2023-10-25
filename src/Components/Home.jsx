@@ -12,7 +12,7 @@ const Home = () => {
       <motion.h1  >New
          <motion.img initial={{rotate:0}} animate={{rotate:[0,80,0,-40,0,80,0,-40,0],transition:{delay:1,duration:0.7}}} src={hello} alt="noimg" /><br />Collections For Everyone
       </motion.h1>
-      <motion.button whileTap={{scale:0.9}} >
+      <motion.button whileTap={{scale:0.9}} initial={{opacity:0}} animate={{opacity:1,transition:{duration:0.6,delay:1.2}}} >
         Latest Collections
       </motion.button>
        </div>

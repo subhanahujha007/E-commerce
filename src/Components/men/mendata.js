@@ -1,5 +1,5 @@
-import img1 from "./Asserts/menpopular1.avif"
-import img2 from "./Asserts/menpopular2.jpg"
+import img1 from "../Asserts/menpopular1.avif"
+import img2 from "../Asserts/menpopular2.jpg"
 let data=[{
     id:1,
 name:"leather jacket",
