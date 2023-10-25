@@ -3,9 +3,10 @@ import "./Navbar/Home.scss"
 import i from "./Asserts/1.png"
 import hello from "./Asserts/images-removebg-preview.png"
 import { motion } from 'framer-motion';
+import Popular from './popular';
 const Home = () => {
   
-  return (
+  return (<div>
     <motion.section initial={{opacity:0}} transition={{duration:1}} animate={{opacity:1}} > 
       <div className="left"> <motion.h2  initial={{x:-600}} animate={{x:200,transition:{duration:0.5,delay:0.4,type:"spring",stiffness:60}}}>DELHI STREETS</motion.h2>
       <motion.h1  >New
@@ -20,6 +21,8 @@ const Home = () => {
       </div>
     
     </motion.section>
+    <Popular/>
+</div>
   )
 }
 

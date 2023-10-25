@@ -6,6 +6,7 @@ import Singup from "./Components/Singup.jsx"
 import Footer from "./Components/Footer.jsx"
 import NOpage from "./Components/NOpage.jsx"
 import Newsletter from "./Components/Newsletter"
+import Men from "./Components/men";
 function App() {
   return (<div >
     <BrowserRouter>
@@ -14,6 +15,7 @@ function App() {
       <Route path="/" element={<Home/>}/>
       <Route path="/login" element={<Login/>}/>
       <Route path="/signup" element={<Singup/>}/>
+      <Route path="/men" element={<Men/>}/>
       <Route path="*" element={<NOpage/>}/>
     </Routes>
     <Newsletter/>
