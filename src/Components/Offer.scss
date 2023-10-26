@@ -3,14 +3,14 @@
     height: 40vh;
     background-color: palevioletred;
     border-radius: 30px;
-   
+   display: flex;
     margin: auto;
     padding: 1rem;
     .text{
         font-family: sans-serif;
         display: flex;
         flex-direction: column;
-        width: 50%;
+        width: 70%;
         gap: 30px;
        
         >p{
@@ -32,6 +32,10 @@
     }
     .imageoffer{
         width: 300px;
+        transition: all 0.5s ease-in-out;
         background-size:cover ;
+        &:hover{
+            transform: translateY(-10px);
+        }
     }
 }
