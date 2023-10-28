@@ -7,10 +7,11 @@ const Singup = () => {
     <div className="su">
          <form >
             <h2>SING UP</h2>
-        <input type="text"  placeholder="USERNAME" />
-        <input type="email" placeholder="ENTER YOUR EMAIL" />
-        <input type="text" placeholder="PASSWORD" />
-        <input type="number" placeholder="PHONE NO" />
+        <input type="text" required placeholder="USERNAME" />
+        <input type="email" required placeholder="ENTER YOUR EMAIL" />
+        <input type="text" required placeholder="PASSWORD" />
+        <input type="number" required  placeholder="PHONE NO" />
+        <button>Continue</button>
         <h3>Already a user?</h3>
         <button><Link to="/login">Log in</Link></button>
         </form>

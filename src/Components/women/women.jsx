@@ -9,7 +9,7 @@ const Women = () => {
     <motion.div initial={{opacity:0}} animate={{opacity:1,transition:{duration:0.7}}} className="womenpage">
         <h1>WOMENS FASHION</h1>
         <Offer/>
-        <motion.div initial={{scale:0}} animate={{scale:1,transition:{duration:0.5,delay:0.3}}} style={{width:"80%",height:"80%"}} >
+        <motion.div initial={{scale:0}} animate={{scale:1,transition:{duration:0.5,delay:0.3,type:"spring",stiffness:70}}} style={{width:"80%",height:"80%"}} >
         {datawomen.map((item,i)=>{
           return(
               <Item key={i} id={item.id} image={item.image} oldprice={item.old_price} newprice={item.new_price} name={item.name} />

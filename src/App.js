@@ -8,6 +8,7 @@ import NOpage from "./Components/NOpage.jsx"
 import Newsletter from "./Components/Newsletter"
 import Men from "./Components/men/men"
 import Women from './Components/women/women.jsx'
+import Kids from "./Components/kids/kids.jsx"
 function App() {
   return (<div >
     <BrowserRouter>
@@ -18,8 +19,8 @@ function App() {
       <Route path="/signup" element={<Singup/>}/>
       <Route path="/men" element={<Men/>}/>
       <Route path="/women" element={<Women/>}/>
+      <Route path="/kids" element={<Kids/>}/>
       <Route path="*" element={<NOpage/>}/>
-      
     </Routes>
     <Newsletter/>
     <Footer/>

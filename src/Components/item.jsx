@@ -1,16 +1,15 @@
 import React from 'react'
 import "./item.css"
-import { motion } from 'framer-motion'
-import { useScroll } from 'framer-motion'
-import { useRef} from 'react'
+import { useRef } from 'react'
+import { motion,useScroll} from 'framer-motion'
 const Item = (props) => {
   const ref=useRef(null)
-    const {scrollYProgress}=useScroll({
-        target:"ref",
-        offset:["0 1","0.6 1"]
-    });
-  return (<div   className="pageforitem">
-    <motion.div  className="item" ref={ref} style={{scale:scrollYProgress}}>
+ const {scrollYProgress}=useScroll({
+      target:"ref",
+      offset:["0 1","0.5 1"]
+ });
+  return (<div  className="pageforitem" >
+    <motion.div ref={ref} style={{scale:scrollYProgress}} className="item" >
         <img className="imgstuff" src={props.image} alt="" />
         <p>{props.name}</p>
         <div className="itemprice">
