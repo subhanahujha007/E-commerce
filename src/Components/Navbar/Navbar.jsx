@@ -22,7 +22,6 @@ const Navbar = () => {
           hidden:{y:"-200%"}
         }}
         animate={hidden?"hidden":"visible"}
-        transition={{duration:0.35,ease:"easeInOut"}}
      >
         <div className="logo"><h1>Sj</h1></div>
         <div className="link">

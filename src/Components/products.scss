@@ -1,0 +1,65 @@
+.fullpage{
+    
+    .items{
+    width: 100%;
+    min-height: 20vh;
+ 
+>li{
+    font-size: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+}
+    .rest{
+        display: flex;
+    .total{
+        >h3{
+            margin-left: 30px;
+        }
+        width: 70%;
+        height: 20vh;
+      
+        >div{
+            height: 20%;
+            display: flex;
+            justify-content: space-between;
+    >p{
+        width: 10%;
+    }
+         }
+    }
+.promo{
+    margin-left: 10px;
+    >h1{
+        font-size: 20px;
+        padding-bottom: 2rem;
+    }
+    >input{
+        background-color: grey;
+        padding: 0.5rem;
+        font-weight: 600;
+        cursor:vertical-text;
+        outline: none;
+    }
+    >button{
+        padding: 0.5rem;
+        background-color: black;
+        color: white;
+    }
+  
+}
+}
+>button{
+    background-color: crimson;
+    padding: 0.75rem;
+    margin: 50px  0px 0px  50px;
+    font-size: 20px;
+    font-size: 300;
+    border-radius: 20px;
+    &:hover{
+        color: white;
+       background-color: rgb(44, 2, 11);
+    }
+}
+}

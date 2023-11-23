@@ -8,7 +8,7 @@ const  Offer = () => {
         <div className="text">
         <h1>FLAT 50% OFF <br />EXCITING OFFER </h1>
         <p>ONLY FOR YOU <br />HURRY UP</p>
-        <motion.button initial={{skew:0}} animate={{skew:[0,25,0,-25,0,25,0,-25,0],transition:{duration:0.5,delay:0.7}}}>EXPLORE NOW</motion.button></div>
+        <motion.button whileTap={{scale:0.9}} initial={{skew:0}} animate={{skew:[0,25,0,-25,0,25,0,-25,0],transition:{duration:0.5,delay:0.7}}}>EXPLORE NOW</motion.button></div>
         <img src={img} alt="" className="imageoffer" />
         </motion.div>
   )
